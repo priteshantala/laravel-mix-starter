@@ -1,0 +1,41 @@
+
+footer
+{
+    .links
+    {
+        margin-top: 20px;
+        .link {
+            display: block;
+            font-size: 14px;
+            font-family: "Montserrat";
+            font-weight: Bold;
+            font-style: normal;
+            line-height: 24px;
+            text-decoration: none;
+            margin-top: 10px;
+            color: rgb(115, 115, 115);
+        }  
+
+        .feature-item
+        {
+            margin-top: 10px;
+
+            h6
+            {
+                margin-left: 15px;
+            }
+        }
+    }
+    .card-content
+    {
+        a
+        {
+            text-decoration: none;
+
+            img
+            {
+                margin-left: 20px;
+            }
+        }
+    }
+}

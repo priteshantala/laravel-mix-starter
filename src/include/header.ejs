@@ -1,44 +1,85 @@
 <header>
-    <nav class="navbar navbar-expand-md navbar-light bg-light">
-		<div class="container-fluid">
-			<a class="navbar-brand" href="index.html">
-				<img class="mb-2 lms-header-logo" src="images/logistic-logo.svg" alt="" width="150">
-			</a>
-			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-				<span class="navbar-toggler-icon"></span>
-			</button>
-
-			<div class="collapse navbar-collapse" id="navbarSupportedContent">
-				<ul class="navbar-nav ms-auto">
-
-					<li class="nav-item <%= htmlWebpackPlugin.options.filename === 'index.html' ? 'active' : '' %>" >
-					<a class="nav-link" href="index.html">Home
-						<span class="sr-only">(current)</span>
-						</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="about-us.html">About us</a>
-					</li>
-
-					<li class="nav-item">
-						<a class="nav-link" href="datatable-demo.html">Datatables</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="font-awesome.html">Font Awesome icon</a>
-					</li>
-					<li class="nav-item dropdown">
-						<a class="nav-link dropdown-toggle" href="javascript:void(0);" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Dropdown</a>
-							<div class="dropdown-menu" aria-labelledby="navbarDropdown">
-								<a class="dropdown-item" href="#">Action</a>
-								<a class="dropdown-item" href="#">Another action</a>
-								<a class="dropdown-item" href="#">Something else here</a>
-							</div>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="contact-us.html">Contact us</a>
-					</li>
-				</ul>
-			</div>
-		</div>
-    </nav>
+  <div class="background bg-img">
+    <img class="bg-shadow" src="images/hero-9-bg-shape-cover.png" alt="" />
+  </div>
+  <nav
+    class="navbar container navbar-expand-lg navbar-light py-4 px-md-5 z-index-1"
+  >
+    <a class="navbar-brand" href="#"> <h1 class="mt-0">MedicalFunc</h1> </a
+    ><button
+      class="navbar-toggler"
+      type="button"
+      data-bs-target="#navbarSupportedContent"
+      data-bs-toggle="collapse"
+      aria-controls="navbarSupportedContent"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div
+      class="collapse navbar-collapse ms-lg-5 mt-4 mt-lg-0"
+      id="navbarSupportedContent"
+    >
+      <ul class="navbar-nav align-items-center">
+        <li
+          class="nav-item <%= htmlWebpackPlugin.options.filename === 'index.html' ? 'active' : '' %>"
+        >
+          <a class="nav-link" href="index.html"><span>Home</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#product"><span>Product</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#pricing"><span>Pricing</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#newsletter"><span>Contact</span></a>
+        </li>
+      </ul>
+      <ul class="navbar-nav mt-4 mt-lg-0 ms-auto align-items-center">
+        <li class="nav-item">
+          <a class="primary-text-color" href="#"><strong>Login</strong></a>
+        </li>
+        <li class="nav-item ms-lg-4 mt-4 mt-lg-0">
+          <a href="#newsletter" class="btn primary-color">
+            <span class="btn-text light-text-color">JOIN US</span
+            ><i class="fas fa fa-arrow-right ml-10 light-text-color"></i>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <div class="container-fluid px-0 position-relative z-index-1">
+    <div class="row justify-content-between align-items-center mx-0">
+      <div
+        class="col-lg-5 col-xl-4 offset-lg-1 my-5 px-5 px-md-0 text-center text-lg-start"
+      >
+        <h5 class="primary-text-color animated fadeInLeft">Welcome</h5>
+        <h1 class="mt-35 text-color front-text animated fadeInLeft">
+          Online <br />
+          Appoinment
+        </h1>
+        <h4 class="h4 second-text-color animated fadeInLeft mt-35">
+          Medical Functional is most focused in helping you discover your most
+          beauiful smile
+        </h4>
+        <div class="cta">
+          <button class="btn primary-color">
+            <span class="btn-text">Get Quote Now</span>
+          </button>
+          <button class="btn btn-learn-more-slider ml-10">
+            <span class="btn-text">Learn More</span>
+          </button>
+        </div>
+      </div>
+      <div class="col-lg-6 mb-5 mb-lg-0 px-0">
+        <img
+          class="cover slider-img animated fadeInRight"
+          src="images/hero-cover-1.png"
+          alt=""
+        />
+      </div>
+    </div>
+  </div>
 </header>
